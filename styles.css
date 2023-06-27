@@ -26,12 +26,35 @@ nav h3 {
   padding: 8px;
 }
 
-nav ul {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin-left: 86px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+ul li:nth-child(1) {
+  border-bottom: 2px solid #fff;
+  font-weight: 700;
+}
+
+.menu-icon,
+.menu-icon-x {
+  width: 38px;
+  cursor: pointer;
   display: none;
 }
 
-.menu {
-  width: 38px;
+nav button {
+  display: none;
 }
 
 .description h1 {
@@ -121,6 +144,11 @@ p {
   margin: 8px 0 0 0;
 }
 
+button {
+  border: none;
+  padding: 0;
+}
+
 footer {
   color: #A9A9A9;
   text-align: center;
@@ -129,6 +157,46 @@ footer {
   font-weight: 500;
   width: 100%;
   margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon-x {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 32px 20px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul.show li {
+    margin-left: 0;
+    margin: 32px 0;
+  }
+
+  main.hidden {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -157,10 +225,9 @@ footer {
   }
 
   .container {
+    margin-top: 150px;
     display: flex;
     align-items: center;
-    height: 60vh;
-    gap: 140px;
   }
 
   .details .presentation {
@@ -196,5 +263,11 @@ footer {
   .author-date {
     font-size: 24px;
     margin: 11px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    gap: 140px;
   }
 }

@@ -17,17 +17,23 @@
   <header>
     <nav>
       <h3>This Interior</h3>
-      <ul>
+      <ul id="menu">
         <li><a href="#"></a>Home</li>
         <li><a href="#"></a>Collection</li>
         <li><a href="#"></a>About</li>
         <li><a href="#"></a>Contact</li>
+        <button class="menu-icon-x" onclick="toggleMenu()">
+          <img src="./public/x.svg" alt="menu">
+        </button>
       </ul>
-      <img class="menu" src="./public/menu.svg" alt="menu">
+      <button onclick="toggleMenu()">
+        <img class="menu-icon" src="./public/menu.svg" alt="menu">
+      </button>
+      
     </nav>
 
   </header>
-  <main class="container">
+  <main class="container" id="container">
     <div class="description">
       <h1>Modern interior</h1>
       <p>A full-Service residential & commercial interior design and staging company offering professional organizing &
@@ -55,4 +61,12 @@
   <footer>created by Quiiroz - devChallenges.io</footer>
 
 </body>
+<script>
+  function toggleMenu() {
+      let menu = document.getElementById("menu");
+      let container = document.getElementById("container")
+      menu.classList.toggle("show");
+      container.classList.toggle("hidden");
+    }
+</script>
 </html>
