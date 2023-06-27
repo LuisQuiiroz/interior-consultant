@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  background: #181719;
+  color: #FFF;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h3 {
+  font-size: 14px;
+  font-family: 'Crimson Pro', serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  display: inline;
+  padding: 8px;
+}
+
+nav ul {
+  display: none;
+}
+
+.menu {
+  width: 38px;
+}
+
+.description h1 {
+  font-size: 36px;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  margin: 25px 0;
+}
+
+.description p {
+  width: 250px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.arrow {
+  width: 24px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 25px;
+  padding-bottom: 37px;
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.details {
+  position: relative;
+}
+
+.details .presentation {
+  width: 100%;
+}
+
+.author {
+  max-width: 300px;
+  position: absolute;
+  bottom: -95px;
+  right: 10px;
+  padding: 10px 20px 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.author-detail {
+  display: flex;
+  gap: 14px;
+}
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  margin: 5px;
+}
+
+.author-name {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0;
+} 
+
+.author-job {
+  color: #828282;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.author-date {
+  font-size: 18px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  margin: 8px 0 0 0;
+}
+
+footer {
+  color: #A9A9A9;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 150px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+      padding: 42px 77px;
+  }
+
+  .description h1 {
+    font-size: 48px;
+    margin: 0 0 48px 0;
+  }
+
+  .description p {
+    width: 410px;
+    font-size: 24px;
+  }
+
+  .link {
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
+
+  .link a {
+    font-size: 18px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    gap: 140px;
+  }
+
+  .details .presentation {
+    max-width: 750px;
+  }
+
+  .author {
+    max-width: 410px;
+    bottom: -95px;
+    right: 32px;
+    padding: 10px 26px 34px;
+  }
+
+  .author-detail {
+    gap: 19px;
+  }
+
+  .author-img {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+  }
+
+  .author-name {
+    font-size: 14px;
+  }
+
+  .author-job {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .author-date {
+    font-size: 24px;
+    margin: 11px 0 0 0;
+  }
+}
