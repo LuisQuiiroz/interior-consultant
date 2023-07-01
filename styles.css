@@ -53,10 +53,6 @@ ul li:nth-child(1) {
   display: none;
 }
 
-nav button {
-  display: none;
-}
-
 .description h1 {
   font-size: 36px;
   font-family: 'Lora', serif;
@@ -160,6 +156,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  .menu button {
+    display: none;
+  }
+
   .menu-icon {
     display: block;
   }
